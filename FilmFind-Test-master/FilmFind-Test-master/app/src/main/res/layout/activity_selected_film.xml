@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedFilm">
+
+
+    <ImageView
+        android:id="@+id/posterofSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        tools:src="@drawable/pos" />
+
+    <TextView
+        android:id="@+id/Ratingoffilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/posterofSelected"
+        android:fontFamily="sans-serif-light"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="IMDb : 1.8" />
+
+    <TextView
+        android:id="@+id/RunningTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ratingoffilm"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/posterofSelected"
+        android:fontFamily="sans-serif-light"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="245 mins" />
+
+    <TextView
+        android:id="@+id/ReleasdDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RunningTime"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/posterofSelected"
+        android:fontFamily="sans-serif-light"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="2013-12-18" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReleasdDate"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/posterofSelected"
+        android:fontFamily="sans-serif-light"
+        android:padding="4dp"
+        android:text="Genre: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/genreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReleasdDate"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/genre"
+        android:fontFamily="sans-serif-light"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="Action \nThriller " />
+
+    <TextView
+
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genreValue"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="sans-serif-light"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#000"
+        android:gravity="center"
+        android:textColor="#A3A3A3"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="Sacred Games" />
+
+    <TextView
+        android:id="@+id/Plot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        tools:text="To avenge his father's death, a circus entertainer trained in magic and acrobatics turns thief to take down a corrupt bank in Chicago. Two cops from Mumbai are assigned to the case." />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E24871A3"
+        android:fontFamily="sans-serif-light"
+        android:text="Watch Trailer"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
